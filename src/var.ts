@@ -1,7 +1,6 @@
-export const NOMBRE_COLEGIO =  "IEP Jesús el Nazareno de Villas de Ancón"
-export const CODIGO_UGEL = "150105"
-export const CODIGO_LOCAL = "580482"
-
+export const NOMBRE_COLEGIO = "IEP Jesús el Nazareno de Villas de Ancón";
+export const CODIGO_UGEL = "150105";
+export const CODIGO_LOCAL = "580482";
 
 //medidas
 
@@ -14,7 +13,7 @@ export const SMALL_RIGHT_HEIGTH = 100;
 export const TOP_WIDTH2 = 330;
 export const RIGHT_HEIGTH = 340;
 
-export const INNER_MARGIN  = 10;
+export const INNER_MARGIN = 10;
 export const EDIFICIO1_HEIGHT = 80;
 
 export const DIRECCION_WIDTH = 60;
@@ -36,8 +35,9 @@ export const KIOSKO_HEIGHT = 45;
 export const KIOSKO_WIDTH = 130;
 
 export const LOZA_DEPORTIVA_MARGIN = 45;
-export const LOZA_DEPORTIVA_ARCO_MARGIN = 70;   
+export const LOZA_DEPORTIVA_ARCO_MARGIN = 70;
 export const LOZA_DEPORTIVA_ARCO_HEIGHT = 30;
 
 export const FIRST_LINE_HEIGHT = 475;
 export const SECOND_LINE_HEIGHT = 510;
+export const SECOND_BUILDING_LINE_START = FIRST_LINE_HEIGHT - 190;
