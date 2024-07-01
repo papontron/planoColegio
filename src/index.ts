@@ -248,12 +248,32 @@ const T01_CENTER = CalculateCenterOfRect({
   p1: OuterPlane.point1,
   p2: OuterPlane.point6,
 });
-document.fillColor("red").text("T01", T01_CENTER.x - 25, T01_CENTER.y);
 const T02_CENTER = CalculateCenterOfRect({
-  p1: OuterPlane.point5,
-  p2: OuterPlane.point4,
+  p1:OuterPlane.point1,
+  p2:OuterPlane.point2
+})
+const T03_CENTER = CalculateCenterOfRect({
+  p1:OuterPlane.point2,
+  p2:OuterPlane.point3
+})
+const T04_CENTER = CalculateCenterOfRect({
+  p1:OuterPlane.point3,
+  p2:OuterPlane.point4
+})
+const T05_CENTER = CalculateCenterOfRect({
+  p1: OuterPlane.point4,
+  p2: OuterPlane.point5,
 });
-document.text("T02", T02_CENTER.x + 5, T02_CENTER.y);
+const T06_CENTER = CalculateCenterOfRect({
+  p1:OuterPlane.point5,
+  p2:OuterPlane.point6
+})
+document.fillColor("red").text("T01", T01_CENTER.x - 25, T01_CENTER.y);
+document.text("T02",T02_CENTER.x-10, T02_CENTER.y-15)
+document.text("T03",T03_CENTER.x-24, T03_CENTER.y-5)
+document.text("T04",T04_CENTER.x-10,T04_CENTER.y-15)
+document.text("T05", T05_CENTER.x + 5, T05_CENTER.y);
+document.text("T06",T06_CENTER.x-10,T06_CENTER.y+9)
 //puertas
 //01
 document.rect(T01_CENTER.x - 5, T01_CENTER.y + 92, 10, 30).stroke("blue");
@@ -310,4 +330,8 @@ const drawText = function (
   });
 };
 drawText(document, [{ text: "hello world", x: 100, y: 100, rotation: 90 }]);
+
+document.rotate(90,{origin:[100,100]})
+document.text("rotated text",100,100)
+document.rotate(-90)
 document.end();

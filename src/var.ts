@@ -1,6 +1,6 @@
 export const NOMBRE_COLEGIO = "IEP Jesús el Nazareno de Villas de Ancón";
 export const CODIGO_UGEL = "150105";
-export const CODIGO_LOCAL = "580482";
+export const CODIGO_LOCAL = "582480";
 
 //medidas
 
